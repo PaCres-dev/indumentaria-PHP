@@ -1,0 +1,337 @@
+@import url('icomoon.css');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+/* https://www.fontsquirrel.com buena pagina para sacar fuentes */
+
+@charset "utf-8";
+/* CSS Document */
+
+body 
+{
+	background-image: url(../img/background/back.png);
+}
+
+/*HEADER*/
+#cabecera 
+{
+	border-radius: 0px 0px 10px 10px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+#marca
+{
+	background-color: #FFFFFF;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+#marca a 
+{
+	display: flex;
+	margin: auto;
+	width: 340px;
+}
+
+#navbar-fluid
+{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#botonera 
+{
+	font-family: 'Arial', 'Arial Black';
+	font-size: 20px;
+	margin-top: 15px;
+	background-color:#cccccc;
+	border-radius: 10px 10px 0px 0px;
+}
+
+nav label
+{
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	text-align: center;
+}
+
+#toggle
+{
+	display: none;
+}
+
+@media only screen and (max-width: 767px)
+{
+	nav label
+	{
+		display: block;
+		cursor: pointer;
+	}
+	nav a
+	{
+		border-bottom: 1px solid #EAEAEB;
+	}
+	ul
+	{
+		display: none;
+	}
+	#toggle:checked + ul
+	{
+		display: block;
+	}
+}
+
+
+/*CONTENEDOR*/
+#contenido 
+{
+	background-color:#cccccc;
+	border-radius: 0px 0px 10px 10px;
+	min-height: 400px;
+	padding-bottom: 25px;
+}
+
+#mi-carousel
+{	
+	padding: 0 0 0 0;
+	background-color:#5cd65c;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+div.carousel-inner img.altura-baja
+{
+	display: flex;
+	margin: auto;
+	height: 250px;
+	width: 1200px;
+}
+
+h2.text-center
+{
+	color: #000000;	
+}
+
+h2.text-center:hover
+{
+	color: #4E4D4D;	
+}
+
+h2, h3, h4
+{
+	font-family: 'Sunflower', sans-serif;
+}
+
+@media (max-width:768px) 
+{
+	#cabecera, #izquierda, #centro, #derecha  {
+		height:auto;
+	}
+	
+}
+
+/* CATALOGO */
+#marcaCatalogo
+{
+	background-color: #F2EEED;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#filter
+{
+	background-color: #F2EEED;
+
+	padding-top: 25px;
+}
+
+/* FICHA DE PRODUCTOS */
+.cajaProductos
+{
+	margin-bottom: 40px;
+	padding-top: 30px;
+	background-color: #F2EEED;
+}
+
+.cajaFicha
+{
+	height: 230px;
+	background-color: #FFFFFF;
+}
+
+.cajaFicha img.img-responsive
+{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	max-height: 100%;
+	display: flex;
+	margin: auto;
+}
+
+.name
+{
+	height: 55px;
+}
+
+.desc
+{
+	height: 135px;
+}
+
+@media only screen and (max-width: 1024px)
+{
+		.cajaFicha
+	{
+		height: 180px;
+	}
+
+	.cajaFicha img.img-responsive
+	{
+		max-height: 100%;
+		display: flex;
+		margin: auto;
+		line-height: auto;
+	}
+
+	.name
+	{
+		height: 70px;
+	}
+
+	.desc
+	{
+		height: 110px;
+	}
+}
+
+/* PRODUCTOS */
+#nombre-producto
+{
+	padding-top: 15px;
+}
+
+div.carousel-inner img.img-producto
+{
+	min-height: 400px;
+	max-height: 400px;
+	display: flex;
+	margin: auto;
+}
+
+.cajaLightbox
+{
+	margin-top: 15px;
+	display: flex;
+	padding: 5px;
+	background-color: #F2EEED;
+}
+
+.cajaLightbox a:hover
+{
+	display: flex;
+	border: 1px solid blue;
+}
+
+#descripcionProducto
+{
+	border-left: 2px solid #F2EEED;
+}
+
+/*FOOTER*/
+#pie 
+{
+	background-color:#396;
+	border-radius: 10px 10px 0px 0px;
+	margin-top: 30px;
+	padding-bottom: 0px;
+}
+
+#pie_cen_i
+{
+	padding:15px;
+	box-sizing: border-box;
+}
+
+#pie_cen_i ul
+{
+    list-style:none;
+}
+
+#pie_cen_i li a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+#pie_cen_i li a:hover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#pie_cen_d
+{
+	text-align: center;
+	padding: 4%;
+}
+
+#pie_izq 
+{
+	padding:15px;
+	box-sizing: border-box;
+}
+
+#pie_der 
+{
+	padding:15px;
+	box-sizing: border-box;
+	text-align: right;
+
+}
+
+#pie a span
+{
+	color: black;
+}
+
+#pie a span:hover
+{
+	color: white;
+}
+
+.img_mini
+{
+	max-height: 80px;
+}
+
+/* ADMINISTRADOR */ 
+#carga, #modifica, #elimina
+{
+	text-align: center;
+	padding: 10px;
+	color: #FFFFFF;
+}
+
+#carga:hover, #modifica:hover, #elimina:hover
+{
+	text-align: center;
+	padding: 10px;
+	color: #396;
+}
+
+#carga
+{
+	background-color: red;
+}
+
+#modifica
+{
+	background-color: orange;
+}
+
+#elimina
+{
+	background-color: #000000;
+}
